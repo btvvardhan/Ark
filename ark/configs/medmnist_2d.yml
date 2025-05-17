@@ -1,0 +1,26 @@
+model:
+  arch: resnet50
+  in_channels: 1
+  pretrained: false
+  multi_task: true
+
+dataset:
+  type: medmnist
+  list:
+    - pathmnist
+    - chestmnist
+    - dermamnist
+    - octmnist
+    - pneumoniamnist
+    - retinamnist
+    - breastmnist
+    - organmnist_axial
+    - organmnist_coronal
+    - organmnist_sagittal
+    - bloodmnist
+    - tissuemnist
+
+train:
+  epochs: 5
+  batch_size: 64
+  learning_rate: 0.001

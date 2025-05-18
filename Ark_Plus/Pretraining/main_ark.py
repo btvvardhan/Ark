@@ -112,8 +112,8 @@ def main(args):
     print(args)
 
     exp_name = args.model_name + "_" + args.exp_name
-    model_path = os.path.join("./Models",exp_name)
-    output_path = os.path.join("./Outputs",exp_name)
+    model_path = os.path.join("/content/drive/MyDrive/RAS507/Models", exp_name)
+    output_path = os.path.join("/content/drive/MyDrive/RAS507/Outputs", exp_name)
 
     datasets_config = get_config('datasets_config.yaml')
     for dataset in args.dataset_list:
